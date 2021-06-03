@@ -7,9 +7,14 @@ let copyright = document.createElement('p');
 copyright.innerHTML = `Elsabeth ${thisYear}`;
 footer.appendChild(copyright);
 
-let skillsSection=document.getElementById("skills")
-let skillsList=document.querySelector('ul')
+
 let skills=['html','css','javscript','git','scrummaster','webdesign'];
+
+let skillsSection=document.getElementById("skills")
+//const skillsSection = document.getElementById('skills');
+const skillsList = skillsSection.getElementsByTagName('ul');
+//let skillsList=document.querySelector('ul')
+
 console.log(skills)
 for(let x=0 ;x <skills.length;x++){
     let skill = document.createElement('li');
