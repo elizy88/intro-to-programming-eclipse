@@ -23,11 +23,14 @@ leave_message.addEventListener('submit',function(e){
     console.log(Name)
     console.log(Email)
     console.log(Message);
+    let newMessage = document.createElement('li');
+    e.preventDefault()
     let messageSection = document.getElementById("messages");
     let  messageList = document.querySelector('ul')
     let newMessage = document.createElement('li');
     e.preventDefault()
-newMessage.innerHTML=`<a href="mailto:elizit88@gmail.com">${Name}</a> wrote <span>${Message}</span>`
+newMessage.innerHTML=`<a href="mailto:elizit88@gmail.com">${Name}</a>
+ wrote <span>${Message}</span>`
 
 console.log(newMessage)
 messages.appendChild(newMessage);
