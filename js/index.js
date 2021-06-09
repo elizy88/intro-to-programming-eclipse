@@ -15,41 +15,38 @@ for(let x=0 ;x <skills.length;x++){
     skill.innerHTML=skills[x];
 skillsSection.appendChild(skill)
 }
-let messageForm=document.getElementsByName('leave_message')
-leave_message.addEventListener('submit',function(e){
-    let Name=e.target.name.value
-    let Email=e.target.email.value
-    let Message=e.target.message.value
-    console.log(Name)
-    console.log(Email)
-    console.log(Message);
-    let newMessage = document.createElement('li');
-    e.preventDefault()
-    let messageSection = document.getElementById("messages");
-    let  messageList = document.querySelector('ul')
-    let newMessage = document.createElement('li');
-    e.preventDefault()
-newMessage.innerHTML=`<a href="mailto:elizit88@gmail.com">${Name}</a>
- wrote <span>${Message}</span>`
-
-console.log(newMessage)
-messages.appendChild(newMessage);
-let removeButton= document.createElement("button")
-removeButton.innerHTML = "remove";
-removeButton.type = "button";
-messages.appendChild(removeButton)
-removeButton.addEventListener("click",(e)=> {
-let entry = document.getElementById("messages").parentNode
-entry.remove();
-
-})
-})
+let messageForm = document.getElementsByName("leave_message");
+    document.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const name = e.target.name.value
+    const email = e.target.email.value
+    const message = e.target.message.value
+    console.log`(Name:${name} Email:${email} Message:${message})`;
+    const newMessage = document.createElement("li")
+    const messageSection = document.getElementById("messages")
+    const messageList = messageSection.querySelector("ul")
+    newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> wrote: <span>${message}</span> &nbsp;`
+    const removeButton=document.createElement("button")
+    removeButton.innerText = "remove";
+    removeButton.type = "button";
+    removeButton.addEventListener("click",(e)=>{
+        const entry = removeButton.parentNode;
+        entry.remove();
+});
+newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    e.target.reset();
+});
 
 
-//    let entry = document.querySelector("button").parentNode.nodeName
-//    entry.remove();
-//   button.appendChild(newMessage)
-//   messages.appendChild(newMessage)
 
-// })
-// })
+
+
+
+
+
+
+
+
+
+
