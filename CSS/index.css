@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    background-color: rgb(241, 216, 238);
+    font-family:  'Muli', sans-serif;;
+     padding-left:20px;
+     margin-left: 20px;
+     padding-right:20px;
+     margin-left:20px;
+}
+
+p{
+    color:black;
+    text-align: 'center';
+    justify-content: center;
+}
+h1,h2,h3,h4,h5,h6{
+    color:blue;
+    font-family: Arial, Helvetica,
+
+}
+a{
+    color:rgb(132, 0, 255);
+    font-family: "Times New Roman", Times, serif;
+
+}
+img{
+    border-radius: 50%;
+
+}
+
+
+    li {
+
+    }
+
