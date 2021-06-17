@@ -3,7 +3,7 @@ console.log(today)
 let thisYear=today.getFullYear()
 let footer = document.querySelector("footer");
 let copyright = document.createElement('p');
-copyright.innerHTML = `&copy Elsabeth ${thisYear}`;
+copyright.innerHTML = `&copy Elsabeth ${thisYear} `;
 footer.appendChild(copyright);
 
 let skillsSection=document.getElementById("skills")

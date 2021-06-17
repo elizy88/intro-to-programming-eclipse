@@ -8,25 +8,35 @@
         <link rel="stylesheet" type="text/css" href="CSS/index.css">
     </head>
     <body>
-        <section>
-        <h1>Elsabeth Kidane</h1>
+        <header>
+            <section name="myname">
+                <header>
+                    <ul>
+                        <li class="links"><a  class="links" href="#messages">connect</a></li>
+                        <li class="links" ><a class="links" href="#experience">Experience</a></li>
+                        <li class="links"><a  class="links" href="#skills">Skills</a></li>
+                        <li class="links"><a  class="links" href="#about">About</a></li>
+                      </ul>
+                </header>
+            <h1>Elsabeth Kidane</h1>
+          </header>  
     </section>
-    <section>
+    <section id="about">
         <h2>About</h2>
-        <img src="C:\Users\Public\Documents\intro-to-programming-eclipse\assets\image\myphoto.JPG" height="100" width="150" border-radius: 50%  alt="my photo"/>
+        <img class="mypic" src="/Users/elsabethkidane/Documents/intro-to-programming-eclipse/assets/image/myphoto.JPG" height="100" width="150"  alt="my photo"/>
         <p>Innovative Front End Developer with 4 years’ experience building and maintaining responsive websites .
              Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React JS).
               Passionate about usability and possess working knowledge of Adobe Dreamweaver and Photoshop.</p>
     </section>
-    <section>
+    <section id="experience">
         <h2>Experience</h2>
        <ul>
-        <li class='experience'>I build web Apps</li>
-        <li class='experiecne'>Design web</li>
-     <li class='experience'>Mentor new interns</li>
+        <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
         </li>
     </section>
-    <section id="skills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
 
@@ -34,7 +44,7 @@
     </section>
     <section>
         <h2>Connect</h2>
-        <a href="mailto:elizit88@gmail.com">elizit88@gmail.com </a>
+       
     </section>
     <section id="messages">
         <h2>Messages</h2>
@@ -45,18 +55,30 @@
     </section>
         <h2>Leave a Message</h2>
         <form name="leave_message">
-<label for="name">Name</label><br>
-<input type="text" name="name" required=true><br><br>
-<label for="email address">Email Address</label><br>
-<input type="email" name="email" required=true><br><br>
-<label for="message">Message</label><br>
+<label for="name">
+    <span>Name</span>
+<input type="text" name="name" required=true>
+</label>
+<label for="email address">
+    <span>Email</span>
+<input type="email" name="email" required=true>
+</label><br><br><br><br>
+
+<label for="message">
+    Message</label><br>
 <textarea name="message" required=true></textarea><br>
 <button type="submit">Submit</button>
         </form>
     </section>
-    <footer></footer>
+    <footer>
+        <ul class="connect-list">
+            <li><a target="_blank" href="mailto: elizit88@gmail.com"> <img class="img-size" src="image/gmail.logo.png" alt="Gmail"></a></li>
+            <li><a href="https://www.linkedin.com/in/elsabeth-kidane-248ba512b/"> <img class="img-size" src="image/linkedIn.logo.png" alt="linkedin"></a></li>
+             <li><a href="https://github.com/elizy88"> <img class="img-size" src="image/github.logo.png" alt="github"></a></li>
+            </ul></footer>
     <script src = "js/index.js">
 
     </script>
+  
     </body>
 </html>
