@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href="CSS/index.css">
     </head>
     <body>
-        <header>
+        <div class="content">
+            <div class="nav">
             <section name="myname">
                 <header>
                     <ul>
@@ -17,9 +18,10 @@
                         <li class="links"><a  class="links" href="#skills">Skills</a></li>
                         <li class="links"><a  class="links" href="#about">About</a></li>
                       </ul>
+                    </div>
                 </header>
             <h1>Elsabeth Kidane</h1>
-          </header>  
+          <div class="aboutme">
     </section>
     <section id="about">
         <h2>About</h2>
@@ -28,24 +30,38 @@
              Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React JS).
               Passionate about usability and possess working knowledge of Adobe Dreamweaver and Photoshop.</p>
     </section>
+    </div>
+    <div class="myexperience">
     <section id="experience">
         <h2>Experience</h2>
        <ul>
         <li class='exp'>I build web Apps</li>
         <li class='exp'>Design web</li>
      <li class='exp'>Mentor new interns</li>
+     <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
+     <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
         </li>
     </section>
+    </div>
+    <div class="myskills">
     <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
 
         </ul>
     </section>
+    </div>
+    <div>
     <section>
         <h2>Connect</h2>
        
     </section>
+    </div>
+    
     <section id="messages">
         <h2>Messages</h2>
         <ul>
@@ -54,21 +70,49 @@
 
     </section>
         <h2>Leave a Message</h2>
+        <div class="flex-boxcontent">
         <form name="leave_message">
-<label for="name">
+            <div class="flexbox1">
+<!-- <label for="name">
     <span>Name</span>
 <input type="text" name="name" required=true>
 </label>
+</div>
+<div class="flexbox2">
 <label for="email address">
     <span>Email</span>
 <input type="email" name="email" required=true>
-</label><br><br><br><br>
-
+</label><br>
+</div>
+<div class="flexbox3">
 <label for="message">
-    Message</label><br>
+    <span>Message</span>
+</label><br>
 <textarea name="message" required=true></textarea><br>
+</div>
+<div class="flexbox4">
 <button type="submit">Submit</button>
+</div>
         </form>
+        </div> -->
+        <div class="flex-container">
+            <div class="flexbox1">
+              <form>
+              <label for="name" required=true> <span>Name</span></label><br />
+               <input type="text" name="name" class="input-form" required=true />
+            </div>
+              <div class="flexbox2">
+                <label for="name" class="label-form"> <span>Email</span></label><br />
+                  <input name="email" required=true  />
+              </div>
+              <div class="flexbox3">
+                 <label for="message">
+                   Message
+                 </label></br>
+                 <textarea rows="4" name="message" class="textarea" required=true></textarea>
+              </div>
+            </form>
+            </div>
     </section>
     <footer>
         <ul class="connect-list">
@@ -79,6 +123,8 @@
     <script src = "js/index.js">
 
     </script>
+    </div>
+    
   
     </body>
 </html>
