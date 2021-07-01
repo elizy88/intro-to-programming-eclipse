@@ -5,34 +5,63 @@
         <meta name="author" content="Elsabeth">
         <title>My code</title>
         <meta name="description" content="My Resume">
+        <link rel="stylesheet" type="text/css" href="CSS/index.css">
     </head>
     <body>
-        <section>
-        <h1>Elsabeth Kidane</h1>
+        <div class="content">
+            <div class="nav">
+            <section name="myname">
+                <header>
+                    <ul>
+                        <li class="links"><a  class="links" href="#messages">connect</a></li>
+                        <li class="links" ><a class="links" href="#experience">Experience</a></li>
+                        <li class="links"><a  class="links" href="#skills">Skills</a></li>
+                        <li class="links"><a  class="links" href="#about">About</a></li>
+                      </ul>
+                    </div>
+                </header>
+            <h1>Elsabeth Kidane</h1>
+          <div class="aboutme">
     </section>
-    <section>
+    <section id="about">
         <h2>About</h2>
-        <img src="/Users/elsabethkidane/Desktop/Screen Shot 2021-05-13 at 4.24.21 PM.png" height="100" width="100" alt="my photo"/>
-        <p>I am React Front End Developer.</p>
+        <img class="mypic" src="/Users/elsabethkidane/Documents/intro-to-programming-eclipse/assets/image/myphoto.JPG" height="100" width="150"  alt="my photo"/>
+        <p>Innovative Front End Developer with 4 years’ experience building and maintaining responsive websites .
+             Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React JS).
+              Passionate about usability and possess working knowledge of Adobe Dreamweaver and Photoshop.</p>
     </section>
-    <section>
+    </div>
+    <div class="myexperience">
+    <section id="experience">
         <h2>Experience</h2>
        <ul>
-            <li>I build web Apps</li>
-            <li>Design web</li>
-            <li>Mentor new interns</li>
+        <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
+     <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
+     <li class='exp'>I build web Apps</li>
+        <li class='exp'>Design web</li>
+     <li class='exp'>Mentor new interns</li>
         </li>
     </section>
-    <section id="skills">
+    </div>
+    <div class="myskills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
 
         </ul>
     </section>
+    </div>
+    <div>
     <section>
         <h2>Connect</h2>
-        <a href="mailto:elizit88@gmail.com">elizit88@gmail.com </a>
+       
     </section>
+    </div>
+    
     <section id="messages">
         <h2>Messages</h2>
         <ul>
@@ -41,19 +70,61 @@
 
     </section>
         <h2>Leave a Message</h2>
+        <div class="flex-boxcontent">
         <form name="leave_message">
-<label for="name">Name</label><br>
-<input type="text" name="name" required=true><br><br>
-<label for="email address">Email Address</label><br>
-<input type="email" name="email" required=true><br><br>
-<label for="message">Message</label><br>
+            <div class="flexbox1">
+<!-- <label for="name">
+    <span>Name</span>
+<input type="text" name="name" required=true>
+</label>
+</div>
+<div class="flexbox2">
+<label for="email address">
+    <span>Email</span>
+<input type="email" name="email" required=true>
+</label><br>
+</div>
+<div class="flexbox3">
+<label for="message">
+    <span>Message</span>
+</label><br>
 <textarea name="message" required=true></textarea><br>
+</div>
+<div class="flexbox4">
 <button type="submit">Submit</button>
+</div>
         </form>
+        </div> -->
+        <div class="flex-container">
+            <div class="flexbox1">
+              <form>
+              <label for="name" required=true> <span>Name</span></label><br />
+               <input type="text" name="name" class="input-form" required=true />
+            </div>
+              <div class="flexbox2">
+                <label for="name" class="label-form"> <span>Email</span></label><br />
+                  <input name="email" required=true  />
+              </div>
+              <div class="flexbox3">
+                 <label for="message">
+                   Message
+                 </label></br>
+                 <textarea rows="4" name="message" class="textarea" required=true></textarea>
+              </div>
+            </form>
+            </div>
     </section>
-    <footer></footer>
+    <footer>
+        <ul class="connect-list">
+            <li><a target="_blank" href="mailto: elizit88@gmail.com"> <img class="img-size" src="image/gmail.logo.png" alt="Gmail"></a></li>
+            <li><a href="https://www.linkedin.com/in/elsabeth-kidane-248ba512b/"> <img class="img-size" src="image/linkedIn.logo.png" alt="linkedin"></a></li>
+             <li><a href="https://github.com/elizy88"> <img class="img-size" src="image/github.logo.png" alt="github"></a></li>
+            </ul></footer>
     <script src = "js/index.js">
 
     </script>
+    </div>
+    
+  
     </body>
 </html>
