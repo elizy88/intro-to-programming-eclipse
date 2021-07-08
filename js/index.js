@@ -44,24 +44,43 @@ messageList.appendChild(newMessage);
 e.target.reset();
 
 })
-let githubRequest= new XMLHttpRequest();
-githubRequest.open("GET","https://api.github.com/users/elizy88/repos");
-githubRequest.send();
-    githubRequest.onload = function () {
-    let repositories=JSON.parse(this.response);
-    let projectSection=document.getElementById("projects");
-    let projectList=projectSection.querySelector('ul')
-    for(let i=0;i<repositories.length;i++){
+// let githubRequest= new XMLHttpRequest();
+// githubRequest.open("GET","https://api.github.com/users/elizy88/repos");
+// githubRequest.send();
+//     githubRequest.onload = function () {
+//     let repositories=JSON.parse(this.response);
+//     let projectSection=document.getElementById("projects");
+//     let projectList=projectSection.querySelector('ul')
+//     for(let i=0;i<repositories.length;i++){
        
-        let project = document.createElement('li');
-    project.innerHTML=`<a href=${`${repositories[i].clone_url}`}>${repositories[i].name}
-    </a>`
+//         let project = document.createElement('li');
+//     project.innerHTML=`<a href=${`${repositories[i].clone_url}`}>${repositories[i].name}
+//     </a>`
    
-  
-    console.log("my repo",repositories[i]);
+//     //console.log("api fetch",response.json)
+//     //console.log("my repo",repositories[i]);
 
-    projectList.appendChild(project)
+//     projectList.appendChild(project)
     
-    }
-}
+//     }
+// }
+fetch('https://api.github.com/users/elizy88/repos')
+.then(response=>response.json())
+.then(data=>repo(data))
+ function repo(data) {
+        //let repositories=JSON.parse(this.response);
+        let projectSection=document.getElementById("projects");
+        let projectList=projectSection.querySelector('ul')
+        for(let i=0;i < data.length;i++){
+           
+           let project = document.createElement('li');
+         project.innerHTML=`<a href=${`${data[i].clone_url}`}>${data[i].name}
+         </a>`
+        projectList.appendChild(project)
+        
+        } }
+    
+    
 
+    
+    
