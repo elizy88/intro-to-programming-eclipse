@@ -8,6 +8,9 @@ body {
     margin: 50px;
     
   }
+  a{
+    text-decoration: none;
+  }
   .aboutme{
 float:left;
   width: 100%;
